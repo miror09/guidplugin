@@ -1,0 +1,33 @@
+package com.example.icnplugin;
+
+import com.ibm.ecm.extension.Plugin;
+import com.ibm.ecm.extension.PluginFeature;
+
+import java.util.Locale;
+
+public class GUIDPlugin extends Plugin {
+    @Override
+    public String getId() {
+        return "GUIDPlugin";
+    }
+
+    @Override
+    public String getName(Locale locale) {
+        return "GUID Plugin";
+    }
+
+    @Override
+    public String getVersion() {
+        return "1.0.0";
+    }
+
+    @Override
+    public String getFeatures() {
+        return "[{\"id\": \"staticPageFeature\", \"name\": \"Static Page Feature\", \"layout\": \"staticPageLayout\"}]";
+    }
+
+    @Override
+    public String getLayouts() {
+        return "[{\"id\": \"staticPageLayout\", \"url\": \"GUIDPlugin.html\"}]";
+    }
+}

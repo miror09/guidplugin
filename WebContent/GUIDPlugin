@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Page Plugin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to the Static Page Plugin</h1>
+        <p>This is a simple static page displayed within ICN.</p>
+        <button id="testButton">Click Me</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#testButton').click(function () {
+                alert('Button clicked!');
+            });
+        });
+    </script>
+</body>
+</html>

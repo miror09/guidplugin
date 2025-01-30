@@ -27,8 +27,8 @@ jobs:
           # Template of status posted to Bluesky (Handlebars)
           template: '{{item.title}} {{item.link}}'
           # This is your service URL (optional)
-          service-url: https://bsky.social
-          # service-url: https://bluesky.sami.sk
+          # service-url: https://bsky.social
+          service-url: https://miror09.bsky.social
           # This is the Bluesky username (example: username.bsky.social)
           username: ${{ secrets.BLUESKY_USERNAME }}
           # This is the app password you created earlier
